@@ -44,16 +44,16 @@ or streaming analytics can be computed, namely an hourly count of distinct crime
 ## Screenshots
 
 ### Console Output - Kafka Consumer
-
-https://github.com/amaralunao/SF-Crime-Statistics/blob/master/screenshots/console_consumer_output.png
+![Kafka consumer console output
+	    ](https://github.com/amaralunao/SF-Crime-Statistics/blob/master/screenshots/console_consumer_output.png)
 
 ### Progress reporter
-
-https://github.com/amaralunao/SF-Crime-Statistics/blob/master/screenshots/progress_report.png
+![Progress Reporter
+	    ](https://github.com/amaralunao/SF-Crime-Statistics/blob/master/screenshots/progress_report.png)
 
 ### Spark Count Output
-
-https://github.com/amaralunao/SF-Crime-Statistics/blob/master/screenshots/spark_count.png
+![Spark Count Output
+	    ](https://github.com/amaralunao/SF-Crime-Statistics/blob/master/screenshots/spark_count.png)
 
 ## Questions
 
