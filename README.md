@@ -58,10 +58,13 @@ or streaming analytics can be computed, namely an hourly count of distinct crime
 ## Questions
 
 ** Q1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
+
 * It has an effect on processedRowsPerSecond, but since `maxOffsetsPerTrigger=200`, and considering data size the impact is limited.
 
 ** Q2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
+
 We need to maximize processedRowsPerSecond. Taking into consideration the size of data, max partition size and number of processors/cores - it is best to tweak:
+
 * `spark.default.parallelism` -> 4
 * `spark.sql.shuffle.partitions` -> 12
 * `spark.streaming.kafka.maxRatePerPartition` -> 10000 
